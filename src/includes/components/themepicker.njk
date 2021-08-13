@@ -1,0 +1,48 @@
+<button
+  class="page__themepicker-toggle themepicker-toggle js-themepicker-toggle"
+  aria-label="Toggle theme panel"
+  aria-expanded="false"
+  aria-controls="theme-menu"
+  type="button">
+  <svg
+    class="themepicker-toggle__icon"
+    width="16" height="16" viewBox="0 0 512 512"
+    aria-hidden="true">
+    <path d="M416 128V32c0-18-14-32-32-32H32C14 0 0 14 0 32v96c0 18 14 32 32 32h352c18 0 32-14 32-32zm32-64v128c0 18-14 32-32 32H256c-35 0-64 29-64 64v32c-18 0-32 14-32 32v128c0 18 14 32 32 32h64c18 0 32-14 32-32V352c0-18-14-32-32-32v-32h160c53 0 96-43 96-96v-64c0-35-29-64-64-64z"/>
+  </svg>
+</button>
+
+<div class="themepicker js-themepicker" hidden>
+  <h2 class="themepicker__title">Select theme</h2>
+  <div class="themepicker__container" tabindex="-1">
+
+    <fieldset
+      class="themepicker__fieldset"
+      id="theme-menu">
+      {% for theme in themes %}
+        <div
+          class="themepicker__item theme-control js-themepicker-select"
+          data-theme="{{ theme.id }}">
+          <input
+            class="theme-control__input"
+            type="radio"
+            id="theme-{{ theme.id }}"
+            name="theme">
+          <label
+            class="theme-control__label"
+            for="theme-{{ theme.id }}">
+            <span class="theme-control__icon"></span>
+            <span class="theme-control__name">{{ theme.name }}</span>
+            <span class="theme-control__palette">
+              <span class="theme-control__hue theme-control__hue--primary"></span>
+              <span class="theme-control__hue theme-control__hue--secondary"></span>
+              <span class="theme-control__hue theme-control__hue--border"></span>
+              <span class="theme-control__hue theme-control__hue--textoffset"></span>
+              <span class="theme-control__hue theme-control__hue--text"></span>
+            </span>
+          </label>
+        </div>
+      {% endfor %}
+    </fieldset>
+  </div>
+</div>

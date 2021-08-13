@@ -1,0 +1,40 @@
+---
+permalink: "/assets/styles/themes.css"
+---
+{%- macro colorscheme(colors) -%}
+  --color-primary: {{ colors.primary }};
+  --color-secondary: {{ colors.secondary }};
+  --color-bg: {{ colors.background }};
+  --color-bg-offset: {{ colors.backgroundOffset }};
+  --color-text: {{ colors.text }};
+  --color-text-offset: {{ colors.textOffset }};
+  --color-border: {{ colors.border }};
+  --color-alpha: {{ colors.alpha }};
+  --color-beta: {{ colors.beta }};
+  --color-gamma: {{ colors.gamma }};
+  --color-delta: {{ colors.delta }};
+  --color-omega: {{ colors.omega }};
+  --color-epsilon: {{ colors.epsilon }};
+  --color-zeta: {{ colors.zeta }};
+  --color-eta: {{ colors.eta }};
+  color-scheme: {{ colors.scheme }}
+{%- endmacro -%}
+
+{%- set default = themes|findById('default') -%}
+{%- set dark = themes|findById('dark') -%}
+
+:root {
+  {{ colorscheme(default.colors) }}
+}
+
+@media(prefers-color-scheme: dark) {
+  :root {
+    {{ colorscheme(dark.colors) }}
+  }
+}
+
+{% for theme in themes %}
+[data-theme='{{ theme.id }}'] {
+  {{ colorscheme(theme.colors) }}
+}
+{% endfor %}

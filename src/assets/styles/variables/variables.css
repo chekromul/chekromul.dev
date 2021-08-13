@@ -1,0 +1,18 @@
+@custom-media --breakpoint (min-width: 40em);
+
+:root {
+  --layout-width: 60rem;
+  --font-family-base: "Noto Sans", system-ui;
+  --transition-time: .15s;
+  --transition-type: ease-out;
+  --dots-bg-image: radial-gradient(rgb(var(--color-text) / 32%) 3px, transparent 0);
+  --dots-size: 24px;
+}
+
+/* All breakpoints to keep the order in build */
+@media (min-width: 22.5em) {}
+@media (min-width: 23em) {}
+@media (min-width: 35em) {}
+@media (min-width: 40em) {}
+@media (min-width: 48em) {}
+

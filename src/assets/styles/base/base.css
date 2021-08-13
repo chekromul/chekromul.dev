@@ -1,0 +1,66 @@
+@font-face {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url("/src/assets/fonts/noto-sans-regular.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+  src: url("/src/assets/fonts/noto-sans-bold.woff2") format('woff2');
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+::selection {
+  color: rgb(var(--color-bg));
+  background: rgb(var(--color-primary));
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+:focus-visible {
+  outline: .25rem solid rgb(var(--color-primary));
+  outline-offset: .25em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001s !important;
+    transition-duration: 0.001s !important;
+    animation-delay: 0s !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  & li::before {
+    content: "\200B"; /* fix the list recognizing in VO + Safari */
+  }
+}

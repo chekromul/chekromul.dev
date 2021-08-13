@@ -1,0 +1,56 @@
+<section class="hero container">
+  <div class="hero__container">
+    <picture class="hero__picture">
+      <source srcset="/assets/images/profile.avif" type="image/avif">
+      <img
+        class="hero__image"
+        src="/assets/images/profile.jpg"
+        width="72" height="72"
+        loading="lazy"
+        alt="A photo of Roman">
+    </picture>
+    <h1 class="hero__title">
+      <span class="hero__greeting greeting">
+        <span class="greeting__bubble">
+          Hi, I’m&nbsp;Roman&nbsp;Chekurov
+          <span class="visually-hidden">,</span>
+          <span class="greeting__emoji" aria-hidden="true">👋</span>
+        </span>
+      </span>
+      <span class="hero__heading underline">Front-end UI&nbsp;Developer</span>
+    </h1>
+    <div class="hero__description" role="text">
+      A&nbsp;design-driven code
+      <div class="anchor">
+        <span class="anchor__text" tabindex="0" role="text">crafter</span>
+        <div class="tooltip" aria-hidden="true">
+          {% include "components/tooltips/crafter.njk" %}
+        </div>
+      </div>
+      based in
+      <div
+        class="anchor">
+        <span class="anchor__text" tabindex="0" role="text">Prague</span>
+        <div class="tooltip" aria-hidden="true">
+          {% include "components/tooltips/prague.njk" %}
+        </div>
+      </div>
+      working at
+      <div
+        class="anchor">
+        <span class="anchor__text js-video-anchor" tabindex="0" role="text">Wrike</span>
+        <div class="tooltip" aria-hidden="true">
+          {% include "components/tooltips/wrike.njk" %}
+        </div>
+      </div>
+      on&nbsp;the UI&nbsp;Kit library, design&nbsp;system, and&nbsp;accessibility.
+    </div>
+    <svg
+      class="hero__svg"
+      width="113" height="103" viewBox="0 0 113 103"
+      aria-hidden="true">
+      <circle cx="64.5" cy="48.5" r="48.5" opacity=".24"/>
+      <circle cx="24.5" cy="78" r="24.5" opacity=".12"/>
+    </svg>
+  </div>
+</section>

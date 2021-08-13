@@ -1,0 +1,149 @@
+.skills__container {
+  position: relative;
+}
+
+.skills__text {
+  max-width: 48ch;
+  margin-top: 1.25em;
+  font-size: 1rem;
+  line-height: 1.5;
+
+  @media (min-width: 35em) {
+    font-size: 1.25rem;
+  }
+
+  @media (min-width: 40em) {
+    font-size: 1.5rem;
+  }
+}
+
+.skills__list {
+  margin-top: 1.75rem;
+
+  @media (min-width: 40em) {
+    margin-top: 3.5rem;
+  }
+}
+
+.skills__item + .skills__item {
+  --gap: 1.75rem;
+  padding-top: var(--gap);
+  margin-top: var(--gap);
+  border-top: .125rem dashed rgb(var(--color-border));
+}
+
+.skills__svg {
+  position: absolute;
+  right: -4rem;
+  bottom: -1rem;
+  display: block;
+  width: 16rem;
+  height: auto;
+  pointer-events: none;
+
+  @media (min-width: 48em) {
+    bottom: -2rem;
+    width: 18rem;
+  }
+
+  & path:nth-child(1) {
+    fill: rgb(var(--color-gamma));
+  }
+
+  & path:nth-child(2) {
+    fill: rgb(var(--color-delta));
+  }
+
+  & ellipse {
+    fill: rgb(var(--color-epsilon));
+  }
+}
+
+.skill {
+  display: grid;
+  grid-template-areas:
+    "icon         title"
+    "description  description"
+    "technologies technologies";
+  grid-template-columns: min-content 1fr;
+  gap: .5rem;
+
+  @media (min-width: 48em) {
+    grid-template-areas:
+      "icon         title        description"
+      "technologies technologies description";
+    grid-template-rows: min-content 1fr;
+    grid-template-columns: min-content minmax(min-content, 15rem) 1fr;
+    gap: .5rem .75rem;
+    align-items: start;
+  }
+}
+
+.skill__icon {
+  --size: 2rem;
+  grid-area: icon;
+  width: var(--size);
+  height: var(--size);
+
+  @media (min-width: 35em) {
+    --size: 2.5rem;
+  }
+}
+
+.skill__title {
+  grid-area: title;
+  align-self: center;
+  justify-self: start;
+  margin: 0;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5;
+
+  @media (min-width: 35em) {
+    font-size: 1.25rem;
+  }
+}
+
+.skill__description {
+  z-index: 1;
+  grid-area: description;
+  max-width: 48ch;
+  color: rgb(var(--color-text-offset));
+  font-size: 1rem;
+  line-height: 1.5;
+
+  @media (min-width: 35em) {
+    font-size: 1.25rem;
+  }
+}
+
+.skill__technologies {
+  z-index: 1;
+  grid-area: technologies;
+}
+
+.skill-icon {
+  fill: rgb(var(--color-primary));
+}
+
+.skill-icon__path {
+  opacity: .32;
+}
+
+.technologies {
+  --technologies-gap: .75em;
+  display: flex;
+  flex-wrap: wrap;
+  margin: calc(var(--technologies-gap) * -1) 0 0 calc(var(--technologies-gap) * -1);
+  font-size: .75rem;
+  line-height: 2;
+}
+
+.technologies__item {
+  padding: 0 .75em;
+  margin: var(--technologies-gap) 0 0 var(--technologies-gap);
+  border: .063em solid rgb(var(--color-border));
+  border-radius: 1em;
+  color: var(--color-text-offset);
+  cursor: default;
+}

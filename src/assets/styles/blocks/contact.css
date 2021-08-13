@@ -1,0 +1,105 @@
+.contact {
+  position: relative;
+  z-index: 0;
+  overflow-x: hidden;
+}
+
+.contact__container {
+  position: relative;
+  display: grid;
+  align-items: center;
+  padding: 1.25rem;
+  border-radius: 1rem;
+  background-color: rgb(var(--color-bg));
+  gap: 3rem;
+
+  @media (min-width: 22.5em) {
+    padding: 2rem;
+  }
+
+  @media (min-width: 35em) {
+    grid-template-columns: 2fr 1fr;
+    padding: 3rem;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 148px;
+    height: 148px;
+    top: -48px;
+    left: -24px;
+    background-image: var(--dots-bg-image);
+    background-size: var(--dots-size) var(--dots-size);
+
+    @media (min-width: 40em) {
+      width: 236px;
+      height: 160px;
+      top: -48px;
+      left: -78px;
+    }
+  }
+}
+
+.contact__svg {
+  position: absolute;
+  right: -4rem;
+  bottom: -2rem;
+  width: 16rem;
+  height: auto;
+  pointer-events: none;
+
+  @media (min-width: 48em) {
+    right: -5rem;
+    bottom: -3rem;
+    width: 18rem;
+  }
+
+  & path:nth-child(1) {
+    fill: rgb(var(--color-zeta));
+  }
+
+  & path:nth-child(2) {
+    fill: rgb(var(--color-eta));
+  }
+}
+
+.mail__heading {
+  margin: 0;
+}
+
+.mail__text {
+  margin: .75em 0;
+  font-size: 1rem;
+  line-height: 1.5;
+
+  @media (min-width: 35em) {
+    max-width: 38ch;
+    font-size: 1.25rem;
+  }
+}
+
+.mail__link {
+  margin-top: .5em;
+  font-size: 1.25rem;
+  font-weight: 600;
+
+  @media (min-width: 35em) {
+    font-size: 1.5rem;
+  }
+}
+
+.socials__heading {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.socials__list {
+  display: grid;
+  row-gap: 1rem;
+  padding: 0;
+  margin: 1rem 0 0;
+  list-style: none;
+}

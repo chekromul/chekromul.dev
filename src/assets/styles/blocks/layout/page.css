@@ -1,0 +1,37 @@
+.page {
+  text-size-adjust: 100%;
+}
+
+.page,
+.page__body {
+  min-height: 100vh;
+}
+
+.page__body {
+  margin: 0;
+  overflow-x: hidden;
+  color: rgb(var(--color-text));
+  font-size: 100%;
+  font-family: var(--font-family-base);
+  background-color: rgb(var(--color-bg));
+}
+
+.page__themepicker-toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.page__main {
+  position: relative;
+  z-index: 1;
+  overflow-x: hidden;
+  background-color: rgb(var(--color-bg));
+}
+
+.page__footer {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+}

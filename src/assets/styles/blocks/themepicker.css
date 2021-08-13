@@ -1,0 +1,203 @@
+.themepicker-toggle {
+  --size: 2.5rem;
+  display: grid;
+  place-items: center;
+  width: var(--size);
+  height: var(--size);
+  padding: 0;
+  border: none;
+  border-bottom-left-radius: 100%;
+  color: #ffffff;
+  font-size: 1.5rem;
+  line-height: 1;
+  font-family: inherit;
+  background-color: rgb(var(--color-secondary));
+  cursor: pointer;
+  transition-property: box-shadow, opacity, transform;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--transition-type);
+
+  @media (min-width: 40em) {
+    --size: 3rem;
+  }
+
+  &:hover,
+  &:focus-visible {
+    box-shadow: -.25rem .25rem rgb(var(--color-secondary) / 24%);
+    opacity: .88;
+    transform: scale(1.05);
+  }
+}
+
+.themepicker-toggle__icon {
+  margin-top: -.25em;
+  margin-right: -.4em;
+  fill: currentColor;
+}
+
+.themepicker {
+  position: relative;
+  z-index: 1;
+  max-height: 0;
+  overflow: hidden;
+  background-color: rgb(var(--color-bg-offset));
+  transition: max-height var(--transition-time) var(--transition-type);
+}
+
+.themepicker--open {
+  max-height: 16rem;
+}
+
+.themepicker__title {
+  padding: 1.25rem 1.25rem 0;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1;
+  letter-spacing: .125em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.themepicker__container {
+  display: flex;
+  overflow-x: auto;
+}
+
+.themepicker__fieldset {
+  flex-shrink: 0;
+  display: flex;
+  padding: 1rem 1.25rem 1.25rem;
+  margin: 0 auto;
+  border: none;
+}
+
+.themepicker__item {
+  flex-shrink: 0;
+  display: grid;
+
+  & + .themepicker__item {
+    margin-left: 1rem;
+  }
+}
+
+.theme-control__input,
+.theme-control__label {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+}
+
+.theme-control__input {
+  z-index: -1;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  appearance: none;
+
+  &:focus-visible {
+
+    & ~ .theme-control__label {
+      outline: .25rem dotted rgb(var(--color-primary));
+      outline-offset: .25em;
+    }
+  }
+
+  &:checked {
+
+    & ~ .theme-control__label .theme-control__icon {
+      display: grid;
+      place-items: center;
+
+      &::before {
+        --size: .375rem;
+        content: "";
+        width: var(--size);
+        height: var(--size);
+        border-radius: 50%;
+        background-color: rgb(var(--color-primary));
+      }
+    }
+  }
+
+  &:not(:checked) {
+
+    & ~ .theme-control__label:hover {
+      border-color: rgb(var(--color-primary));
+      box-shadow: 0 .25rem 1rem 0 rgb(0 0 0 / 32%), 0 0 .063rem 0 rgb(0 0 0 / 16%);
+      transform: translateY(-.063rem);
+    }
+  }
+}
+
+.theme-control__label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 12em;
+  padding: 1em;
+  border: .25em solid rgb(var(--color-border));
+  border-radius: .75em;
+  color: rgb(var(--color-text));
+  font-size: .875rem;
+  text-align: center;
+  background-color: rgb(var(--color-bg));
+  cursor: pointer;
+  transition-property: box-shadow, transform, border-color;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--transition-type);
+  user-select: none;
+}
+
+.theme-control__icon {
+  --size: 1rem;
+  display: grid;
+  place-items: center;
+  width: var(--size);
+  height: var(--size);
+  margin-bottom: .5em;
+  border: .25em solid rgb(var(--color-border));
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.theme-control__name {
+  color: rgb(var(--color-text));
+}
+
+.theme-control__palette {
+  display: block;
+  margin-top: .5em;
+}
+
+.theme-control__hue {
+  --size: 1.5em;
+  display: inline-block;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  vertical-align: bottom;
+  box-shadow: 0 0 0 .125em #ffffff;
+
+  & + .theme-control__hue {
+    margin-left: -.5em;
+  }
+}
+
+.theme-control__hue--primary {
+  background-color: rgb(var(--color-primary));
+}
+
+.theme-control__hue--secondary {
+  background-color: rgb(var(--color-secondary));
+}
+
+.theme-control__hue--border {
+  background-color: rgb(var(--color-border));
+}
+
+.theme-control__hue--textoffset {
+  background-color: rgb(var(--color-text-offset));
+}
+
+.theme-control__hue--text {
+  background-color: rgb(var(--color-text));
+}

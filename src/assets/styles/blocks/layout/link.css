@@ -1,0 +1,26 @@
+.link {
+  --color: var(--color-text);
+  --color-active: rgb(var(--color-primary));
+  color: rgb(var(--color));
+  transition-property: color, text-decoration-color;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--transition-type);
+  text-decoration-line: underline;
+  text-decoration-thickness: .15em;
+  text-underline-offset: .25em;
+  text-decoration-skip-ink: auto;
+  text-decoration-color: rgb(var(--color) / 16%);
+
+  &:hover,
+  &:focus {
+    color: var(--color-active);
+  }
+
+  &:hover {
+    text-decoration-color: var(--color-active);
+  }
+
+  &:focus-visible {
+    text-decoration-line: none;
+  }
+}

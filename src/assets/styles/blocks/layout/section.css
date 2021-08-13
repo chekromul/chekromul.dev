@@ -1,0 +1,21 @@
+.section {
+  --padding: 3rem;
+  padding-top: var(--padding);
+  padding-bottom: var(--padding);
+
+  @media (min-width: 40em) {
+    --padding: 4rem;
+  }
+}
+
+.section--large {
+  --padding: 4rem;
+
+  @media (min-width: 40em) {
+    --padding: 6rem;
+  }
+}
+
+.section--secondary {
+  background-color: rgb(var(--color-bg-offset));
+}

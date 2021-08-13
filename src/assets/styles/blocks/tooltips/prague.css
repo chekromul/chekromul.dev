@@ -1,0 +1,107 @@
+.stamp {
+  --w: 256px;
+  --h: 160px;
+  --cut-size: calc(var(--w) / 16);
+  --bg-color: #ffebcd;
+
+  position: relative;
+  display: flex;
+  width: var(--w);
+  height: var(--h);
+  color: #8d6e63;
+  line-height: 1;
+  background:
+    radial-gradient(transparent 0, transparent 50%, var(--bg-color) 50%, var(--bg-color) 100%)
+    calc(-0.5 * var(--cut-size)) calc(-0.5 * var(--cut-size)) /
+    var(--cut-size) var(--cut-size)
+    repeat,
+
+    linear-gradient(0deg, var(--bg-color) 0, var(--bg-color) 100%)
+    center center /
+    calc(var(--w) - var(--cut-size)) calc(var(--h) - var(--cut-size))
+    no-repeat;
+  filter: drop-shadow(4px 1px rgb(240 98 146 / 40%));
+  animation: flipInY .6s both;
+}
+
+.stamp__inner {
+  position: relative;
+  flex-grow: 1;
+  margin: 12px;
+}
+
+.stamp__picture {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 66%;
+  height: 100%;
+  border-radius: .5rem;
+  overflow: hidden;
+}
+
+.stamp__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.stamp__country {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: .75rem;
+  letter-spacing: .063em;
+  text-transform: uppercase;
+}
+
+.stamp__price {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: -.063em;
+}
+
+.stamp__price-currency {
+  margin-left: .25rem;
+  font-size: .5em;
+  font-weight: 400;
+  letter-spacing: normal;
+  vertical-align: super;
+}
+
+.stamp__postmark {
+  position: absolute;
+  top: 22%;
+  left: -32%;
+  height: 92px;
+  fill: rgb(158 158 158 / 64%);
+}
+
+@keyframes flipInY {
+  0% {
+    opacity: 0;
+    transform: perspective(25rem) rotateY(90deg);
+    animation-timing-function: ease-in;
+  }
+
+  40% {
+    transform: perspective(25rem) rotateY(-20deg);
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    opacity: 1;
+    transform: perspective(25rem) rotateY(10deg);
+  }
+
+  80% {
+    transform: perspective(25rem) rotateY(-5deg);
+  }
+
+  to {
+    transform: perspective(25rem)
+  }
+}

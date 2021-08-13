@@ -1,0 +1,133 @@
+.projects__heading {
+  margin: 0;
+}
+
+.projects__list {
+  margin: 1rem 0 0;
+
+  @media (min-width: 40em) {
+    margin-top: 2rem;
+  }
+}
+
+.projects-list__item {
+  border-radius: .75rem;
+}
+
+.projects-list {
+  display: grid;
+  gap: 2rem;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: 35em) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.project-card,
+.more-card {
+  --card-padding: 1.5rem;
+
+  @media (min-width: 40em) {
+    --card-padding: 2rem;
+  }
+}
+
+.project-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: var(--card-padding) var(--card-padding) 1.5rem;
+  background-color: rgb(var(--color-bg-offset));
+  transition-property: box-shadow, transform;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--transition-type);
+  overflow: hidden;
+
+  &:hover,
+  &:focus-within {
+    box-shadow: .75rem .75rem rgb(var(--color-primary) / 24%);
+    transform: translateY(-.125rem);
+  }
+
+  &::before {
+    position: absolute;
+  }
+}
+
+.project-card__picture {
+  order: -1;
+  margin: calc(var(--card-padding) * -1) calc(var(--card-padding) * -1) 0;
+}
+
+.project-card__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.project-card__title {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: 1rem;
+
+  @media (min-width: 35em) {
+    font-size: 1.25rem;
+  }
+}
+
+.project-card__link {
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+  }
+}
+
+.project-card__description {
+  margin-top: 1rem;
+  line-height: 1.5;
+}
+
+.more-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--card-padding);
+  font-size: 1.125rem;
+  line-height: 1.5;
+  text-align: center;
+
+  @media (min-width: 35em) {
+    border: .25rem solid rgb(var(--color-bg-offset));
+    font-size: 1.25rem;
+  }
+
+  @media (min-width: 48em) {
+    font-size: 1.5rem;
+  }
+}
+
+.more-card__text {
+  margin: 0;
+}
+
+.more-card__icon {
+  --size: 1rem;
+  width: var(--size);
+  height: var(--size);
+  margin-right: .25em;
+  fill: currentColor;
+
+  @media (--breakpoint) {
+    --size: 1.5rem;
+  }
+}
+
+.more-card__link {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: top;
+}

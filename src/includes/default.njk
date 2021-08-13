@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html class="page" lang="{{ data.site.lang }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{ title or data.site.title }}</title>
+
+    <link rel="preload" href="/assets/fonts/noto-sans-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/noto-sans-bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="{% webpack 'main.css' %}">
+    <link rel="stylesheet" href="/assets/styles/themes.css">
+
+    <meta name="description" content="{{ data.site.description }}">
+    <meta property="og:title" content="{{ title or data.site.title }}">
+    <meta property="og:description" content="{{ description or data.site.description }}">
+    <meta property="og:image" content="{{ data.site.url }}{{ data.site.image }}">
+    <meta property="og:url" content="{{ data.site.url }}">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{{ data.site.url }}">
+    <meta property="twitter:title" content="{{ title or data.site.title }}">
+    <meta property="twitter:description" content="{{ description or data.site.description }}">
+    <meta property="twitter:image" content="{{ data.site.url }}{{ data.site.imageTwitter }}">
+
+    {# the theme is set in the themepicker.js #}
+    <meta name="theme-color">
+
+    <link rel="apple-touch-icon" href="/assets/images/favicons/apple-touch-icon.png">
+    <link rel="icon" href="/favicon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script>
+      // if there's a theme id in localstorage, use it on the <html>
+      localStorage.getItem('theme') &&
+      document.documentElement.setAttribute('data-theme', localStorage.getItem('theme'))
+    </script>
+  </head>
+  <body class="page__body">
+    {{ content | safe }}
+    <script async defer src="{% webpack 'main.js' %}"></script>
+  </body>
+</html>

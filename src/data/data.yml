@@ -1,0 +1,36 @@
+site:
+  lang: en
+  name: Roman Chekurov
+  title: Roman Chekurov
+  description: A Web UI developer, specialized in building user-centered interfaces with a strong focus on inclusive design, performance, and accessibility.
+  type: website
+  url: https://chekromul.dev
+  image: /assets/images/portrait-512.jpg
+  imageTwitter: /assets/images/twitter.webp
+
+projects:
+  - name: CodeFest Schedule App
+    description: An interactive schedule for the CodeFest conference, which was later used at DartUp and some of the Wrike's internal events.
+    image: codefest
+    imageLarge: codefest-2x
+    alt: Screenshot of the CodeFest Schedule App interface
+    link: https://github.com/wrike/codefestx
+
+  - name: Wrike CodeBattle
+    description: A game where two programmers solving code challenges using a selected programming language. Developed for the Wrike stand at DartUp conference.
+    image: codebattle
+    imageLarge: codebattle-2x
+    alt: Screenshot of the CodeBattle interface
+    link: https://codepen.io/chekromul/pen/eYmmoWe
+
+  - name: UIkit E-commerce Template
+    description: Online store template with the catalog, filters, product, shopping cart, and other pages of e-commerce websites. Designed and developed with UIkit framework.
+    image: uikit-ecommerce-template
+    imageLarge: uikit-ecommerce-template-2x
+    alt: Screenshot of the UIKit Ecommerce Template
+    link: https://github.com/chekromul/uikit-ecommerce-template
+
+social:
+  github: https://github.com/chekromul
+  codepen: https://codepen.io/chekromul
+  linkedin: https://www.linkedin.com/in/chekromul
