@@ -14,7 +14,7 @@ projects:
     image: codefest
     imageLarge: codefest-2x
     alt: Screenshot of the CodeFest Schedule App interface
-    link: https://github.com/wrike/codefestx
+    link: https://codepen.io/chekromul/pen/RwwXMWO
 
   - name: Wrike CodeBattle
     description: A game where two programmers solving code challenges using a selected programming language. Developed for the Wrike stand at DartUp conference.
