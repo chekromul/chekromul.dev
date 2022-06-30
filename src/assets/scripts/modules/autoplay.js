@@ -1,7 +1,6 @@
-const videoAnchor = document.querySelector('.js-video-anchor');
-const video = document.querySelector('.js-video');
+const videoAnchors = document.querySelectorAll('.js-video-anchor');
 
-const playVideo = function(event) {
+function playVideo(video) {
   video.play();
   if(window.matchMedia) {
     const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
@@ -10,14 +9,18 @@ const playVideo = function(event) {
       video.currentTime = 5;
     }
   }
-};
+}
 
-const stopVideo = function(event) {
+function stopVideo(video) {
   video.pause();
   video.currentTime = 0;
-};
+}
 
-videoAnchor.addEventListener('mouseover', playVideo, false);
-videoAnchor.addEventListener('mouseout', stopVideo, false);
-videoAnchor.addEventListener('focusin', playVideo, false);
-videoAnchor.addEventListener('focusout', stopVideo, false);
+videoAnchors.forEach(anchor => {
+  const video = anchor.nextElementSibling.querySelector('video');
+
+  anchor.addEventListener('mouseover', (e) => playVideo(video), false);
+  anchor.addEventListener('mouseout', (e) => stopVideo(video), false);
+  anchor.addEventListener('focusin', (e) => playVideo(video), false);
+  anchor.addEventListener('focusout', (e) => stopVideo(video), false);
+})

@@ -1,0 +1,11 @@
+.celonis {
+  --bg-color: 92 254 79;
+  background-color: rgb(var(--bg-color));
+  box-shadow: .5rem .5rem rgb(var(--bg-color) / 64%);
+  animation: bounceIn .75s both;
+}
+
+.celonis__video {
+  display: block;
+  width: 17rem;
+}
