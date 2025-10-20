@@ -1,0 +1,125 @@
+@layer theme {
+  :root {
+    --border-size: 0.0625rem;
+    --radius-pill: 9999px;
+    --radius-round: 50%;
+    --font-family-primary: "IBM Plex Serif", ui-sans-serif, system-ui, sans-serif;
+    --font-family-secondary: "IBM Plex Mono", ui-monospace, monospace;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    --page-bg: var(--color-bg-canvas);
+    --page-padding: 0.375rem;
+    --guide-size: 0.0625rem;
+    --guide-color: var(--page-bg);
+    --spacer-block-size: 3rem;
+    --container-inline-size: 80rem;
+    --container-padding-inline: 0.75rem;
+    --grid-item-padding: 1rem;
+    --perspective-bg: var(--color-theme-4);
+
+    @media screen and (min-width: 640px) {
+      --page-padding: 1.5rem;
+      --container-padding-inline: 1.5rem;
+      --grid-item-padding: 1.75rem;
+    }
+
+    /* Color scheme: auto by default (respects system preference) */
+    color-scheme: light dark;
+
+    /* Theme colors using light-dark() */
+    --color-bg-canvas: light-dark(hsl(40 18% 91%), hsl(320 7% 14%));
+    --color-bg-surface: light-dark(hsl(0 0% 100%), hsl(300 8% 10%));
+    --color-text-primary: light-dark(hsl(72 16% 21%), hsl(10 57% 96%));
+    --color-text-secondary: light-dark(hsl(60 2% 39%), hsl(320 4% 77%));
+    --color-shadow: light-dark(color-mix(in hsl, hsl(72 16% 21%) 20%, transparent), color-mix(in hsl, hsl(0 0% 0%) 80%, transparent));
+    --color-shadow-perspective: var(--color-theme-8);
+    --color-focus: var(--color-theme-8);
+    --color-status: light-dark(hsl(120 100% 25%), hsl(145 100% 47%));
+  }
+
+  [data-theme="light"] {
+    color-scheme: light;
+  }
+
+  [data-theme="dark"] {
+    color-scheme: dark;
+  }
+
+  [data-color="peach"] {
+    --color-theme-1: light-dark(hsl(0 100% 99%), hsl(0 19% 8%));
+    --color-theme-2: light-dark(hsl(10 100% 98%), hsl(11 21% 10%));
+    --color-theme-3: light-dark(hsl(11 99% 95%), hsl(6 47% 16%));
+    --color-theme-4: light-dark(hsl(10 100% 91%), hsl(5 64% 20%));
+    --color-theme-5: light-dark(hsl(10 100% 87%), hsl(5 65% 23%));
+    --color-theme-6: light-dark(hsl(10 97% 84%), hsl(6 54% 29%));
+    --color-theme-7: light-dark(hsl(10 88% 78%), hsl(9 49% 35%));
+    --color-theme-8: light-dark(hsl(10 81% 70%), hsl(9 48% 45%));
+    --color-theme-9: light-dark(hsl(9 82% 54%), hsl(9 82% 54%));
+    --color-theme-10: light-dark(hsl(9 79% 51%), hsl(9 80% 59%));
+    --color-theme-11: light-dark(hsl(9 82% 46%), hsl(9 100% 74%));
+    --color-theme-12: light-dark(hsl(9 49% 24%), hsl(9 85% 89%));
+  }
+
+  [data-color="mint"] {
+    --color-theme-1: light-dark(hsl(170 71% 98%), hsl(180 19% 7%));
+    --color-theme-2: light-dark(hsl(165 56% 96%), hsl(180 29% 9%));
+    --color-theme-3: light-dark(hsl(164 77% 92%), hsl(178 100% 10%));
+    --color-theme-4: light-dark(hsl(167 78% 87%), hsl(179 100% 11%));
+    --color-theme-5: light-dark(hsl(167 69% 81%), hsl(179 100% 14%));
+    --color-theme-6: light-dark(hsl(167 58% 73%), hsl(173 69% 20%));
+    --color-theme-7: light-dark(hsl(167 49% 65%), hsl(172 56% 26%));
+    --color-theme-8: light-dark(hsl(168 42% 52%), hsl(171 51% 33%));
+    --color-theme-9: light-dark(hsl(165 73% 72%), hsl(165 73% 72%));
+    --color-theme-10: light-dark(hsl(165 70% 69%), hsl(165 79% 82%));
+    --color-theme-11: light-dark(hsl(172 99% 24%), hsl(165 59% 60%));
+    --color-theme-12: light-dark(hsl(171 45% 18%), hsl(166 74% 86%));
+  }
+
+  [data-color="blueberry"] {
+    --color-theme-1: light-dark(hsl(210 100% 99%), hsl(214 35% 9%));
+    --color-theme-2: light-dark(hsl(206 100% 98%), hsl(214 50% 12%));
+    --color-theme-3: light-dark(hsl(206 97% 95%), hsl(211 100% 17%));
+    --color-theme-4: light-dark(hsl(204 100% 91%), hsl(209 100% 19%));
+    --color-theme-5: light-dark(hsl(204 100% 88%), hsl(209 100% 23%));
+    --color-theme-6: light-dark(hsl(204 95% 84%), hsl(209 79% 30%));
+    --color-theme-7: light-dark(hsl(205 90% 76%), hsl(210 67% 37%));
+    --color-theme-8: light-dark(hsl(204 86% 65%), hsl(210 69% 45%));
+    --color-theme-9: light-dark(hsl(206 100% 50%), hsl(206 100% 50%));
+    --color-theme-10: light-dark(hsl(206 100% 47%), hsl(206 100% 62%));
+    --color-theme-11: light-dark(hsl(209 90% 43%), hsl(206 100% 72%));
+    --color-theme-12: light-dark(hsl(211 56% 23%), hsl(204 100% 88%));
+  }
+
+  [data-color="plum"] {
+    --color-theme-1: light-dark(hsl(300 100% 99%), hsl(300 19% 8%));
+    --color-theme-2: light-dark(hsl(300 50% 98%), hsl(300 22% 10%));
+    --color-theme-3: light-dark(hsl(300 43% 95%), hsl(300 36% 16%));
+    --color-theme-4: light-dark(hsl(296 67% 92%), hsl(298 43% 20%));
+    --color-theme-5: light-dark(hsl(295 63% 88%), hsl(297 36% 23%));
+    --color-theme-6: light-dark(hsl(296 60% 84%), hsl(297 34% 29%));
+    --color-theme-7: light-dark(hsl(296 51% 78%), hsl(296 30% 35%));
+    --color-theme-8: light-dark(hsl(295 41% 70%), hsl(296 30% 46%));
+    --color-theme-9: light-dark(hsl(292 48% 52%), hsl(292 48% 52%));
+    --color-theme-10: light-dark(hsl(293 47% 48%), hsl(294 51% 56%));
+    --color-theme-11: light-dark(hsl(293 46% 44%), hsl(294 76% 76%));
+    --color-theme-12: light-dark(hsl(293 57% 23%), hsl(294 63% 90%));
+  }
+
+  [data-color="olive"] {
+    --color-theme-1: light-dark(hsl(120 14% 98%), hsl(60 4% 7%));
+    --color-theme-2: light-dark(hsl(120 13% 97%), hsl(90 5% 9%));
+    --color-theme-3: light-dark(hsl(120 6% 94%), hsl(60 4% 13%));
+    --color-theme-4: light-dark(hsl(120 6% 91%), hsl(60 5% 16%));
+    --color-theme-5: light-dark(hsl(120 6% 88%), hsl(60 5% 18%));
+    --color-theme-6: light-dark(hsl(120 5% 85%), hsl(60 4% 22%));
+    --color-theme-7: light-dark(hsl(120 6% 81%), hsl(60 5% 28%));
+    --color-theme-8: light-dark(hsl(90 3% 73%), hsl(60 6% 37%));
+    --color-theme-9: light-dark(hsl(90 4% 55%), hsl(60 6% 43%));
+    --color-theme-10: light-dark(hsl(60 4% 51%), hsl(60 6% 47%));
+    --color-theme-11: light-dark(hsl(60 4% 38%), hsl(90 7% 69%));
+    --color-theme-12: light-dark(hsl(90 8% 13%), hsl(120 9% 93%));
+  }
+}

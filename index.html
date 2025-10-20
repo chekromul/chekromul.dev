@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <link rel="stylesheet" href="/src/styles/main.css" />
+    <link
+      rel="preload"
+      href="/fonts/IBMPlexSerif-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/IBMPlexSerif-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/IBMPlexMono-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="apple-touch-icon" href="/images/favicons/apple-touch-icon.png" />
+    <link rel="icon" href="/favicon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="canonical" href="https://chekromul.com/" />
+    <title>Roman Chekurov</title>
+    <meta
+      name="title"
+      content="Roman Chekurov — Design Engineer based in Berlin"
+    />
+    <meta
+      name="description"
+      content="Design engineer driven by design systems, accessibility, and the craft of UI."
+    />
+    <meta name="author" content="Roman Chekurov" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://chekromul.com/" />
+    <meta
+      property="og:title"
+      content="Roman Chekurov — Design Engineer based in Berlin"
+    />
+    <meta
+      property="og:description"
+      content="Design engineer driven by design systems, accessibility, and the craft of UI."
+    />
+    <meta property="og:site_name" content="Roman Chekurov" />
+    <meta property="og:locale" content="en" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+  </head>
+  <body class="page">
+    <main class="page__main main">
+      <div class="main__placeholder main__placeholder--top"></div>
+      <div class="main__layout">
+        <div class="main__layout-cap"></div>
+        <div class="main__content container">
+          <!-- Hero -->
+          <section class="hero guide grid">
+            <!-- Intro -->
+            <div class="hero__intro intro">
+              <span class="intro__status"> open to opportunities </span>
+              <h1 class="intro__title">
+                <span class="intro__title-greeting">Hi, my name is</span>
+                <span class="intro__title-name">
+                  <span>Roman</span>
+                  <span>Chekurov</span>
+                </span>
+              </h1>
+              <!-- prettier-ignore -->
+              <p class="intro__introduction" role="text">
+                a
+                <span class="design-engineer js-handle-touch">
+                  <span>design</span>&nbsp;<span data-text="engineer">engineer</span>
+                </span>
+                based&nbsp;in&nbsp;Berlin, driven by&nbsp;design&nbsp;systems, accessibility, and the&nbsp;craft of UI
+              </p>
+            </div>
+            <!-- Canvas -->
+            <div
+              class="hero__canvas"
+              role="img"
+              aria-label="Abstract animated background with noise lines"
+            >
+              <noise-lines clickable></noise-lines>
+            </div>
+          </section>
+
+          <!-- Meta -->
+          <div class="meta guide grid">
+            <span>Berlin, Germany</span>
+            <time></time>
+            <div>
+              <theme-switcher></theme-switcher>
+            </div>
+          </div>
+
+          <!-- Introduction -->
+          <section class="introduction guide grid">
+            <div class="introduction__text">
+              <p>
+                Great products start where design&nbsp;thinking meets
+                engineering&nbsp;craft.
+              </p>
+              <p>
+                My work lives at that intersection&nbsp;— shaping&nbsp;UI,
+                design&nbsp;systems, and tools that keep products consistent,
+                scalable, and&nbsp;future-proof.
+              </p>
+            </div>
+            <div class="introduction__canvas canvas guide">
+              <h2 class="sr-only">Industry knowledge and skills</h2>
+              <ul class="introduction__canvas-list" role="list">
+                <li class="pill">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 256 256"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M80,40a40,40,0,1,0,40,40A40,40,0,0,0,80,40Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,80,104Zm96,16a40,40,0,1,0-40-40A40,40,0,0,0,176,120Zm0-64a24,24,0,1,1-24,24A24,24,0,0,1,176,56ZM80,136a40,40,0,1,0,40,40A40,40,0,0,0,80,136Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,80,200Zm96-64a40,40,0,1,0,40,40A40,40,0,0,0,176,136Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,176,200Z"
+                    />
+                  </svg>
+                  <span>engineering</span>
+                </li>
+
+                <li class="pill">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 256 256"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M215.79,118.17a8,8,0,0,0-5-5.66L153.18,90.9l14.66-73.33a8,8,0,0,0-13.69-7l-112,120a8,8,0,0,0,3,13l57.63,21.61L88.16,238.43a8,8,0,0,0,13.69,7l112-120A8,8,0,0,0,215.79,118.17ZM109.37,214l10.47-52.38a8,8,0,0,0-5-9.06L62,132.71l84.62-90.66L136.16,94.43a8,8,0,0,0,5,9.06l52.8,19.8Z"
+                    />
+                  </svg>
+                  <span>product</span>
+                </li>
+
+                <li class="pill">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 256 256"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M224,88H175.4l8.47-46.57a8,8,0,0,0-15.74-2.86l-9,49.43H111.4l8.47-46.57a8,8,0,0,0-15.74-2.86L95.14,88H48a8,8,0,0,0,0,16H92.23L83.5,152H32a8,8,0,0,0,0,16H80.6l-8.47,46.57a8,8,0,0,0,6.44,9.3A7.79,7.79,0,0,0,80,224a8,8,0,0,0,7.86-6.57l9-49.43H144.6l-8.47,46.57a8,8,0,0,0,6.44,9.3A7.79,7.79,0,0,0,144,224a8,8,0,0,0,7.86-6.57l9-49.43H208a8,8,0,0,0,0-16H163.77l8.73-48H224a8,8,0,0,0,0-16Zm-76.5,64H99.77l8.73-48h47.73Z"
+                    />
+                  </svg>
+                  <span>design</span>
+                </li>
+
+                <li class="pill">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 256 256"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M160,40a32,32,0,1,0-32,32A32,32,0,0,0,160,40ZM128,56a16,16,0,1,1,16-16A16,16,0,0,1,128,56ZM231.5,87.71A19.62,19.62,0,0,0,212,72H44a20,20,0,0,0-8.38,38.16l.13,0,50.75,22.35-21,79.72A20,20,0,0,0,102,228.8l26-44.87,26,44.87a20,20,0,0,0,36.4-16.52l-21-79.72,50.75-22.35.13,0A19.64,19.64,0,0,0,231.5,87.71Zm-17.8,7.9-56.93,25.06a8,8,0,0,0-4.51,9.36L175.13,217a7,7,0,0,0,.49,1.35,4,4,0,0,1-5,5.45,4,4,0,0,1-2.25-2.07,6.31,6.31,0,0,0-.34-.63L134.92,164a8,8,0,0,0-13.84,0L88,221.05a6.31,6.31,0,0,0-.34.63,4,4,0,0,1-2.25,2.07,4,4,0,0,1-5-5.45,7,7,0,0,0,.49-1.35L103.74,130a8,8,0,0,0-4.51-9.36L42.3,95.61A4,4,0,0,1,44,88H212a4,4,0,0,1,1.73,7.61Z"
+                    />
+                  </svg>
+                  <span>accessibility</span>
+                </li>
+
+                <li class="pill">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 256 256"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M122.34,109.66a8,8,0,0,0,11.32,0l40-40a8,8,0,0,0,0-11.32l-40-40a8,8,0,0,0-11.32,0l-40,40a8,8,0,0,0,0,11.32ZM128,35.31,156.69,64,128,92.69,99.31,64Zm5.66,111a8,8,0,0,0-11.32,0l-40,40a8,8,0,0,0,0,11.32l40,40a8,8,0,0,0,11.32,0l40-40a8,8,0,0,0,0-11.32ZM128,220.69,99.31,192,128,163.31,156.69,192Zm109.66-98.35-40-40a8,8,0,0,0-11.32,0l-40,40a8,8,0,0,0,0,11.32l40,40a8,8,0,0,0,11.32,0l40-40A8,8,0,0,0,237.66,122.34ZM192,156.69,163.31,128,192,99.31,220.69,128Zm-82.34-34.35-40-40a8,8,0,0,0-11.32,0l-40,40a8,8,0,0,0,0,11.32l40,40a8,8,0,0,0,11.32,0l40-40A8,8,0,0,0,109.66,122.34ZM64,156.69,35.31,128,64,99.31,92.69,128Z"
+                    />
+                  </svg>
+                  <span>design systems</span>
+                </li>
+
+                <li class="pill">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 256 256"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.45,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.87V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"
+                    />
+                  </svg>
+                  <span>ui architecture</span>
+                </li>
+
+                <li class="pill">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 256 256"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M237.33,106.21,61.41,41l-.16-.05A16,16,0,0,0,40.9,61.25a1,1,0,0,0,.05.16l65.26,175.92A15.77,15.77,0,0,0,121.28,248h.3a15.77,15.77,0,0,0,15-11.29l.06-.2,21.84-78,78-21.84.2-.06a16,16,0,0,0,.62-30.38ZM149.84,144.3a8,8,0,0,0-5.54,5.54L121.3,232l-.06-.17L56,56l175.82,65.22.16.06Z"
+                    ></path>
+                  </svg>
+                  <span>user experience</span>
+                </li>
+
+                <li class="pill">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 256 256"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M192,96a40,40,0,0,0-24-72H96A40,40,0,0,0,72,96a40,40,0,0,0,1.37,65A44,44,0,1,0,144,196V160a40,40,0,1,0,48-64Zm0-32a24,24,0,0,1-24,24H144V40h24A24,24,0,0,1,192,64ZM72,64A24,24,0,0,1,96,40h32V88H96A24,24,0,0,1,72,64Zm24,88a24,24,0,0,1,0-48h32v48H96Zm32,44a28,28,0,1,1-28-28h28Zm40-44a24,24,0,1,1,24-24A24,24,0,0,1,168,152Z"
+                    />
+                  </svg>
+                  <span>figma</span>
+                </li>
+
+                <li class="pill">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 256 256"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M196.12,128c24.65-34.61,37.22-70.38,19.74-87.86S162.61,35.23,128,59.88C93.39,35.23,57.62,22.66,40.14,40.14S35.23,93.39,59.88,128c-24.65,34.61-37.22,70.38-19.74,87.86h0c5.63,5.63,13.15,8.14,21.91,8.14,18.48,0,42.48-11.17,66-27.88C151.47,212.83,175.47,224,194,224c8.76,0,16.29-2.52,21.91-8.14h0C233.34,198.38,220.77,162.61,196.12,128Zm8.43-76.55c7.64,7.64,2.48,32.4-18.52,63.28a300.33,300.33,0,0,0-21.19-23.57A300.33,300.33,0,0,0,141.27,70C172.15,49,196.91,43.8,204.55,51.45ZM176.29,128a289.14,289.14,0,0,1-22.76,25.53A289.14,289.14,0,0,1,128,176.29a289.14,289.14,0,0,1-25.53-22.76A289.14,289.14,0,0,1,79.71,128,298.62,298.62,0,0,1,128,79.71a289.14,289.14,0,0,1,25.53,22.76A289.14,289.14,0,0,1,176.29,128ZM51.45,51.45c2.2-2.21,5.83-3.35,10.62-3.35C73.89,48.1,92.76,55,114.72,70A304,304,0,0,0,91.16,91.16,300.33,300.33,0,0,0,70,114.73C49,83.85,43.81,59.09,51.45,51.45Zm0,153.1C43.81,196.91,49,172.15,70,141.27a300.33,300.33,0,0,0,21.19,23.57A304.18,304.18,0,0,0,114.73,186C83.85,207,59.09,212.2,51.45,204.55Zm153.1,0c-7.64,7.65-32.4,2.48-63.28-18.52a304.18,304.18,0,0,0,23.57-21.19A300.33,300.33,0,0,0,186,141.27C207,172.15,212.19,196.91,204.55,204.55ZM140,128a12,12,0,1,1-12-12A12,12,0,0,1,140,128Z"
+                    />
+                  </svg>
+                  <span>react</span>
+                </li>
+
+                <li class="pill">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 256 256"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Z"
+                    />
+                  </svg>
+                  <span>web standards</span>
+                </li>
+
+                <li class="pill">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 256 256"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M235.33,116.72,139.28,20.66a16,16,0,0,0-22.56,0l-96,96.06a16,16,0,0,0,0,22.56l96.05,96.06h0a16,16,0,0,0,22.56,0l96.05-96.06a16,16,0,0,0,0-22.56ZM128,224h0L32,128,128,32,224,128Z"
+                    />
+                  </svg>
+                  <span>performance</span>
+                </li>
+
+                <li class="circle circle--small" role="none"></li>
+                <li class="circle circle--small" role="none"></li>
+                <li class="circle circle--small" role="none"></li>
+                <li class="circle circle--medium" role="none"></li>
+                <li class="circle circle--large" role="none"></li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Experience -->
+          <section class="content-section guide">
+            <h2 class="content-section__title">
+              Work Experience
+              <noise-lines compact on-visible></noise-lines>
+            </h2>
+
+            <div class="employments">
+              <!-- Busbud -->
+              <app-employment
+                logo="/images/companies/busbud.svg"
+                logo-alt="Busbud"
+                url="https://www.busbud.com"
+                url-browser="busbud.com"
+                period="2023–2025"
+                title="Busbud"
+                preview-description="Outline schematic presentation of the Busbud search results page, showing simplified UI elements and layout."
+              >
+                <p>
+                  As a design&nbsp;engineer at Busbud, I’ve been leading the
+                  evolution of&nbsp;the company’s design&nbsp;system, called
+                  Horizon. In collaboration with designers, we redefined the UI
+                  React foundation&nbsp;— moving beyond legacy MUI components
+                  to&nbsp;a&nbsp;modern, system-first architecture
+                  and&nbsp;reducing friction between design and&nbsp;code.
+                </p>
+
+                <p>
+                  I focused on making the UI scalable and&nbsp;fast while
+                  improving developer&nbsp;experience&nbsp;— simplifying
+                  workflows, boosting performance, and&nbsp;helping teams ship
+                  features faster and&nbsp;more confidently.
+                </p>
+
+                <p>
+                  Today, the design&nbsp;system powers multiple Busbud products,
+                  from&nbsp;the B2B&nbsp;dashboard and checkout flows to
+                  white-label partner solutions. It’s flexible, accessible, and
+                  built to scale.
+                </p>
+
+                <busbud-app slot="app"></busbud-app>
+              </app-employment>
+
+              <!-- Celonis -->
+              <app-employment
+                logo="/images/companies/celonis.svg"
+                logo-alt="Celonis"
+                url="https://celonis.com"
+                url-browser="celonis.com"
+                period="2021–2023"
+                title="Celonis"
+                preview-description="Outline schematic presentation of a Celonis analytics dashboard interface, showing charts and UI components built with the Emotion design system."
+              >
+                <p>
+                  As a UI&nbsp;engineer at Celonis, I contributed to the
+                  foundation of a company-wide design&nbsp;system and
+                  UI&nbsp;kit called Emotion. I built and&nbsp;maintained
+                  Angular components, unified visual patterns, and&nbsp;improved
+                  collaboration between design and&nbsp;engineering.
+                </p>
+
+                <p>
+                  With the design team, we&nbsp;introduced Figma
+                  as&nbsp;the&nbsp;single source of&nbsp;truth
+                  and&nbsp;established design tokens for better consistency.
+                  I&nbsp;also focused on accessibility&nbsp;— auditing
+                  components and&nbsp;closing WCAG compliance gaps.
+                </p>
+
+                <p>
+                  This work helped Celonis scale its interface with&nbsp;clarity
+                  and&nbsp;consistency, enabling faster product&nbsp;delivery
+                  and&nbsp;a&nbsp;more inclusive user&nbsp;experience.
+                </p>
+                <celonis-app slot="app"></celonis-app>
+              </app-employment>
+
+              <!-- Wrike -->
+              <app-employment
+                logo="/images/companies/wrike.svg"
+                logo-alt="Wrike"
+                url="https://www.wrike.com"
+                url-browser="wrike.com"
+                period="2018–2021"
+                title="Wrike"
+                preview-description="Outline schematic presentation of the Wrike workspace interface, showing data grid, charts, and dashboard components."
+              >
+                <p>
+                  As a&nbsp;UI&nbsp;developer at Wrike, I&nbsp;built
+                  and&nbsp;optimized UIs for key product areas, including
+                  navigation, grid&nbsp;view, automation&nbsp;engine,
+                  request&nbsp;forms, and&nbsp;more.
+                </p>
+
+                <p>
+                  I&nbsp;worked to bring accessibility into every stage
+                  of&nbsp;development, from design&nbsp;reviews to
+                  QA&nbsp;testing. We&nbsp;reached WCAG&nbsp;2.1&nbsp;AA
+                  compliance and&nbsp;built a culture where accessibility was
+                  simply part of&nbsp;how we&nbsp;worked.
+                </p>
+
+                <p>
+                  Along the way, I&nbsp;contributed to the company’s core
+                  UI&nbsp;kit used&nbsp;by 30+ product teams, improving
+                  consistency, performance, and&nbsp;long-term maintainability.
+                </p>
+
+                <wrike-app slot="app"></wrike-app>
+              </app-employment>
+            </div>
+          </section>
+
+          <!-- Projects & Artifacts -->
+          <section class="content-section guide">
+            <h2 class="content-section__title">
+              Projects & Artifacts
+              <noise-lines compact on-visible></noise-lines>
+            </h2>
+            <div class="projects guide">
+              <ul class="projects__container" role="list">
+                <app-project
+                  title="CodeFest Schedule"
+                  description="UI for the schedule web app built for CodeFest and DartUp conferences."
+                  image="/images/projects/codefest.avif"
+                  image-alt="3D render of a smartphone showing the CodeFest Schedule app, with the conference agenda visually spilling out of the screen like a paper scroll"
+                  video="/videos/codefest.mp4"
+                  url="https://codepen.io/chekromul/pen/RwwXMWO"
+                  source="codepen"
+                  role="listitem"
+                  style="--i: 1"
+                ></app-project>
+
+                <app-project
+                  title="CodeBattle"
+                  description="UI for a two-player coding battle game built for Wrike's booth at the DartUp conference."
+                  image="/images/projects/codebattle.avif"
+                  image-alt="Leaderboard screen of the CodeBattle web game showing player nicknames, wins, and games count on a dark interface"
+                  video="/videos/codebattle.mp4"
+                  url="https://codepen.io/chekromul/pen/eYmmoWe"
+                  source="codepen"
+                  role="listitem"
+                  style="--i: 2"
+                ></app-project>
+
+                <app-project
+                  title="Electronic Store Template"
+                  description="A UIKit-based electronic store template with 800+ stars on GitHub."
+                  image="/images/projects/store.avif"
+                  image-alt="Catalog page of the electronic store web template showing laptop products displayed as cards"
+                  video="/videos/template.mp4"
+                  url="https://github.com/chekromul/uikit-ecommerce-template"
+                  source="github"
+                  role="listitem"
+                  style="--i: 3"
+                ></app-project>
+
+                <app-project
+                  title="Booking Confirmation"
+                  description="Animated prototype of a Busbud booking confirmation screen with a confetti effect."
+                  image="/images/projects/booking.avif"
+                  image-alt="Booking confirmation screen showing a successful bus ticket purchase with confetti burst"
+                  video="/videos/booking.mp4"
+                  url="https://codepen.io/chekromul/pen/mdveJLq"
+                  source="codepen"
+                  role="listitem"
+                  style="--i: 4"
+                ></app-project>
+
+                <app-project
+                  title="Status Picker"
+                  description="Micro-interaction experiment exploring how a task completion can feel more satisfying."
+                  image="/images/projects/status.avif"
+                  image-alt="Status picker showing a completed task with a playful motion effect"
+                  video="/videos/status.mp4"
+                  url="https://codepen.io/chekromul/pen/YzrewLP"
+                  source="codepen"
+                  role="listitem"
+                  style="--i: 5"
+                ></app-project>
+
+                <app-project
+                  title="Bus Seat Reservation"
+                  description="Interactive prototype exploring seat reservation flow for Busbud."
+                  image="/images/projects/seats.avif"
+                  image-alt="Busbud seat reservation UI showing a bus seating layout where users can select and book seats"
+                  video="/videos/seats.mp4"
+                  url="https://codepen.io/chekromul/pen/zYVdOjP"
+                  source="codepen"
+                  role="listitem"
+                  style="--i: 6"
+                ></app-project>
+
+                <app-project
+                  title="Data Grid"
+                  description="Table grid component with visual customization options."
+                  image="/images/projects/grid.avif"
+                  image-alt="Grid component layout showing a table with rows, columns, and data"
+                  video="/videos/grid.mp4"
+                  url="https://codepen.io/chekromul/pen/pooNNMG"
+                  source="codepen"
+                  role="listitem"
+                  style="--i: 7"
+                ></app-project>
+
+                <app-project
+                  title="Celonis Dashboard Navigation"
+                  description="Prototype exploring navigation between Celonis dashboards and apps."
+                  image="/images/projects/navigation.avif"
+                  image-alt="Prototype of Celonis dashboard navigation showing app tiles and transition between dashboards"
+                  video="/videos/navigation.mp4"
+                  url="https://codepen.io/chekromul/pen/wvxmgJe"
+                  source="codepen"
+                  role="listitem"
+                  style="--i: 8"
+                ></app-project>
+
+                <app-project
+                  title="Bus Itinerary Timeline"
+                  description="UI for a cross-city bus itinerary timeline on Busbud."
+                  image="/images/projects/itinerary.avif"
+                  image-alt="Busbud itinerary timeline UI showing cross-city bus trip details with stops and times"
+                  video="/videos/itinerary.mp4"
+                  url="https://codepen.io/chekromul/pen/wvxmgJe"
+                  source="codepen"
+                  role="listitem"
+                  style="--i: 9"
+                ></app-project>
+
+                <p class="projects__more">
+                  See my other projects and code samples on
+                  <br />
+                  <a
+                    class="link"
+                    href="https://github.com/chekromul"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 256 256"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.72,41.72,0,0,1,200,104Z"
+                      />
+                    </svg>
+                    GitHub
+                  </a>
+                  and
+                  <a
+                    class="link"
+                    href="https://codepen.io/chekromul"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 256 256"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M235.79,89l-104-56a8,8,0,0,0-7.58,0l-104,56A8,8,0,0,0,16,96v64a8,8,0,0,0,4.21,7.05l104,56a8,8,0,0,0,7.58,0l104-56A8,8,0,0,0,240,160V96A8,8,0,0,0,235.79,89ZM224,146.61,189.45,128,224,109.39Zm-51.43-27.7L136,99.22V53.39L215.13,96Zm-44.57,24L100.3,128,128,113.09,155.7,128Zm-8-89.52V99.22L83.43,118.91,40.87,96Zm-88,56L66.55,128,32,146.61Zm51.43,27.7L120,156.78v45.83L40.87,160ZM136,202.61V156.78l36.57-19.69L215.13,160Z"
+                      />
+                    </svg>
+                    CodePen
+                  </a>
+                </p>
+              </ul>
+            </div>
+          </section>
+
+          <!-- About Me -->
+          <section class="content-section guide">
+            <h2 class="content-section__title">
+              About me
+              <noise-lines compact on-visible></noise-lines>
+            </h2>
+            <div class="about guide grid">
+              <div class="about__text">
+                <p>
+                  Hello, I’m&nbsp;Roman, a&nbsp;design&nbsp;engineer
+                  from&nbsp;Berlin who blends design&nbsp;thinking
+                  with&nbsp;front-end&nbsp;craft. I&nbsp;focus
+                  on&nbsp;design&nbsp;systems, UI&nbsp;development,
+                  and&nbsp;accessibility&nbsp;— finding harmony between vision,
+                  code, and&nbsp;how products&nbsp;<i>feel</i>&nbsp;in&nbsp;use.
+                </p>
+                <p>
+                  Over the years, I’ve worked across design and&nbsp;engineering
+                  teams, building the&nbsp;connective&nbsp;tissue that holds
+                  both&nbsp;worlds together&nbsp;— foundations and&nbsp;tools
+                  to&nbsp;keep design and&nbsp;implementation in&nbsp;sync.
+                  Working at that intersection taught me to&nbsp;think
+                  in&nbsp;systems, to see how consistency, motion,
+                  and&nbsp;clarity shape the&nbsp;user experience.
+                </p>
+                <p>
+                  When I’m&nbsp;not in&nbsp;front of a&nbsp;keyboard, I’m
+                  exploring through travel, photography, books, and&nbsp;music.
+                  Curiosity keeps me learning new tools and&nbsp;ideas that
+                  expand how I&nbsp;think about design, engineering,
+                  and&nbsp;the&nbsp;way things are&nbsp;made.
+                </p>
+              </div>
+              <div class="about__photos">
+                <photo-stack>
+                  <img
+                    src="/images/photos/portrait.avif"
+                    alt="Portrait of Roman Chekurov wearing glasses and a sweater, lit by a circular warm spotlight against a dark background."
+                    width="362"
+                    height="485"
+                    loading="lazy"
+                    data-caption="Hey, that's me."
+                  />
+                  <img
+                    src="/images/photos/prague.avif"
+                    alt="Roman Chekurov taking a selfie in a circular tunnel made of stacked books that spirals infinitely upward."
+                    width="362"
+                    height="485"
+                    loading="lazy"
+                    data-caption="Municipal Library of Prague"
+                    data-location="Czechia"
+                  />
+                  <img
+                    src="/images/photos/figures.avif"
+                    alt="Small figures of Cody and May from the game It Takes Two standing on a blue LEGO Vespa 125 model."
+                    width="362"
+                    height="485"
+                    loading="lazy"
+                    data-caption="It Takes Two figures on LEGO Vespa 125"
+                  />
+                  <img
+                    src="/images/photos/electric-callboy.avif"
+                    alt="Crowd at a rock concert with raised hands as a performer sings on stage surrounded by bursts of fire."
+                    width="362"
+                    height="485"
+                    loading="lazy"
+                    data-caption="Electric Callboy"
+                    data-location="Munich, Germany"
+                  />
+                  <img
+                    src="/images/photos/lisbon.avif"
+                    alt="View under a massive red suspension bridge with a person sitting by the waterfront and the Christ the King statue visible across the river."
+                    width="362"
+                    height="485"
+                    loading="lazy"
+                    data-caption="25 de Abril Bridge"
+                    data-location="Lisbon, Portugal"
+                  />
+                  <img
+                    src="/images/photos/morocco.avif"
+                    alt="Couple riding an ATV through vast desert sand dunes with tire tracks and several other riders in the distance."
+                    width="362"
+                    height="485"
+                    loading="lazy"
+                    data-caption="Sahara dunes"
+                    data-location="Morocco"
+                  />
+                  <img
+                    src="/images/photos/hatta.avif"
+                    alt="People kayaking on a calm lake surrounded by rocky mountains under a clear blue sky."
+                    width="362"
+                    height="485"
+                    loading="lazy"
+                    data-caption="Hatta Dam"
+                    data-location="Hatta, UAE"
+                  />
+                  <img
+                    src="/images/photos/stockholm.avif"
+                    alt="Underground metro station with orange cave-like walls and a person standing near the escalators beside a blue train."
+                    width="362"
+                    height="485"
+                    loading="lazy"
+                    data-caption="Rådhuset"
+                    data-location="Stockholm, Sweden"
+                  />
+                  <img
+                    src="/images/photos/korea.avif"
+                    alt="Large hand sculpture rising from the sea near the shore, with seagulls flying overhead on a cloudy day."
+                    width="362"
+                    height="485"
+                    loading="lazy"
+                    data-caption="Hand of Harmony"
+                    data-location="Pohang, South Korea"
+                  />
+                  <img
+                    src="/images/photos/metronon.avif"
+                    alt="Woman performing electronic music under red and purple lighting in a dark outdoor setting."
+                    width="362"
+                    height="485"
+                    loading="lazy"
+                    data-caption="Metronon"
+                    data-location="Prague, Czechia"
+                  />
+                  <img
+                    src="/images/photos/munich.avif"
+                    alt="Crowd of people with umbrellas walking through a snowy Christmas market at night, with a tall illuminated Gothic-style tower in the background."
+                    width="362"
+                    height="485"
+                    loading="lazy"
+                    data-caption="Marienplatz"
+                    data-location="Munich, Germany"
+                  />
+                </photo-stack>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="main__placeholder main__placeholder--bottom"></div>
+    </main>
+    <footer class="page__footer footer">
+      <div class="footer__canvas">
+        <noise-lines on-scroll-end></noise-lines>
+      </div>
+      <div class="footer__container grid container">
+        <div class="footer__contact">
+          <h2 class="footer__title">Say hello.</h2>
+          <p class="footer__description">
+            Got a question, proposal, or want to work together on a project?
+            Feel free to reach&nbsp;out.
+          </p>
+          <email-copy
+            class="footer__email"
+            email="chekromul@gmail.com"
+          ></email-copy>
+        </div>
+        <ul class="footer__socials">
+          <li>
+            <a
+              class="link"
+              href="https://www.linkedin.com/in/chekromul"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <a
+              class="link"
+              href="https://github.com/chekromul"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+          </li>
+          <li>
+            <a
+              class="link"
+              href="https://codepen.io/chekromul"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              CodePen
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script type="module" src="/src/scripts/main.js"></script>
+  </body>
+</html>

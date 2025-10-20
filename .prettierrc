@@ -1,0 +1,12 @@
+{
+  "overrides": [
+    {
+      "files": "*.css",
+      "options": {
+        "parser": "css",
+        "printWidth": 1000,
+        "proseWrap": "preserve"
+      }
+    }
+  ]
+}
