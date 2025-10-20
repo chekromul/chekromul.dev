@@ -254,7 +254,7 @@
 
   .intro__title-name {
     font-weight: var(--font-weight-bold);
-    font-size: 2.125rem;
+    font-size: 3rem;
     line-height: 1;
 
     @media screen and (min-width: 640px) {
@@ -269,15 +269,18 @@
 
   .intro__introduction {
     margin-block-start: 0.5rem;
-    font-size: 1.125rem;
+    font-size: 1.5rem;
     text-wrap: pretty;
 
-    @media screen and (min-width: 640px) {
+    @media screen and (min-width: 960px) {
+      font-size: 1.25rem;
+    }
+
+    @media screen and (min-width: 1260px) {
       font-size: 1.5rem;
     }
 
     .design-engineer {
-      vertical-align: top;
       margin-inline: 0.15em;
     }
   }
@@ -582,7 +585,7 @@
 
   .employment__description {
     margin-block-start: 0.5em;
-    font-size: 0.75rem;
+    font-size: 0.875rem;
     text-wrap: pretty;
 
     @media screen and (min-width: 640px) {
@@ -2591,10 +2594,14 @@
 
   .about__text {
     align-content: center;
-    font-size: 1.125rem;
+    font-size: 1rem;
     text-wrap: pretty;
     max-width: 56ch;
     margin-inline: auto;
+
+    @media screen and (min-width: 640px) {
+      font-size: 1.125rem;
+    }
 
     @media screen and (min-width: 960px) {
       grid-column: span 2;
